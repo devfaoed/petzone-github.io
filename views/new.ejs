@@ -1,0 +1,36 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="container">
+    <div class="row head" id="peak">
+        <div class="col-md-9 col-xs-6">
+            <h2>ADD DOG</h2><br>
+            <form action="/blog/new" method="POST">
+                <div class="form-group">
+                    <label for="name">Dog Name</label>
+                    <input type="text" name="pet[name]" class="form-control" placeholder="the name of your dog">
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Image</label>
+                    <input type="text" name="pet[image]" class="form-control" placeholder="image url only">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea cols="7" rows="7" name="pet[description]" class="form-control" placeholder="about your dog"></textarea>
+                </div>
+               
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="CREATE">
+            </form>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+<%- include("./partials/footer.ejs") %>

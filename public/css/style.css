@@ -1,0 +1,30 @@
+a:link{
+    text-decoration: none;
+}
+.auto{
+    margin-top: 80px;
+}
+#form{
+    display: inline;
+}
+.head{
+    margin-top: 30px;;
+}
+#peak{
+    width: 50%;
+    margin: 40px auto;
+}
+.sect{
+    font-size: 90%;
+}
+#index, #blend{
+    font-size: 100%;
+}
+.img{
+    width: 80%;
+}
+.error{
+    font-size: 5em;
+   margin-top: 90px;
+   text-align: center;
+}

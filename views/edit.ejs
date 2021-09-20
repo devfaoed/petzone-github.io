@@ -1,0 +1,35 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <h2>EDIT DOG </h2><br>
+            <form action="/blog/<%= foundblog._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <label for="name">Dog Name</label>
+                    <input type="text" name="pet[name]" class="form-control" value=" <%= foundblog.name %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Image</label>
+                    <input type="text" name="pet[image]" class="form-control" value=" <%= foundblog.image %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea cols="7" rows="7" name="pet[description]" class="form-control"> <%= foundblog.description %></textarea>
+                </div>
+               
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="UPDATE">
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+<%- include("./partials/footer.ejs") %>s
